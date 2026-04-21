@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Day Instagram Growth System - Premium AI Bundle</title>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2705928223109900');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2705928223109900&ev=PageView&noscript=1"
+    /></noscript>
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --light-gold: #FBE106;
+            --dark-bg: #050505;
+            --card-bg: #111111;
+            --text-main: #ffffff;
+            --text-dim: #a0a0a0;
+            --accent-red: #ff3e3e;
+            --glow: rgba(212, 175, 55, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+        body { background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+        /* ANIMATIONS */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulseGlow { 0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); } 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); } }
+        
+        .reveal { opacity: 0; }
+        .reveal.active { animation: fadeInUp 0.8s ease forwards; }
+
+        /* STICKY TOP BAR */
+        .top-bar {
+            position: fixed; top: 0; width: 100%; background: var(--accent-red); color: white;
+            text-align: center; padding: 12px; font-weight: 800; z-index: 1000; letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(255, 62, 62, 0.3); font-size: 0.95rem;
+        }
+
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+        .text-center { text-align: center; }
+
+        /* HERO SECTION */
+        .hero { 
+            padding: 160px 0 60px; text-align: center; 
+            background: radial-gradient(circle at 50% 30%, #1a150a 0%, #050505 100%);
+        }
+        
+        .hero h1 { 
+            font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 20px;
+            background: linear-gradient(to bottom, #fff 60%, #999); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        .hero h2 { color: var(--primary-gold); font-size: clamp(1.1rem, 3vw, 1.8rem); margin-bottom: 15px; font-weight: 700; }
+        .hero-sub { font-size: 1.2rem; color: var(--text-dim); max-width: 800px; margin: 0 auto 40px; }
+
+        /* VIDEO BOX */
+        .video-wrapper {
+            max-width: 850px; margin: 0 auto 50px; border-radius: 20px; padding: 10px;
+            background: linear-gradient(45deg, var(--primary-gold), transparent);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .video-container { border-radius: 15px; overflow: hidden; position: relative; background: #000; aspect-ratio: 16/9; }
+
+        /* BUTTONS & CENTERING */
+        .cta-box { 
+            margin: 40px auto; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block; background: linear-gradient(45deg, var(--primary-gold), var(--light-gold));
+            color: #000; padding: 22px 50px; border-radius: 100px; text-decoration: none;
+            font-weight: 900; font-size: clamp(1rem, 4vw, 1.4rem); text-transform: uppercase; border: none;
+            cursor: pointer; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: pulseGlow 2s infinite; width: 90%; max-width: 500px;
+            margin: 10px auto;
+        }
+        .btn:hover { transform: scale(1.05) translateY(-5px); filter: brightness(1.1); }
+        .micro-copy { margin-top: 15px; display: flex; justify-content: center; gap: 20px; color: var(--text-dim); font-size: 0.85rem; font-weight: 600; flex-wrap: wrap; }
+
+        /* VALUE STACK SECTION */
+        .section-padding { padding: 60px 0; }
+        .value-stack { background: #0a0a0a; border: 1px solid #222; border-radius: 25px; padding: 40px; margin: 20px auto; max-width: 600px; text-align: center; }
+        .value-stack h3 { color: var(--primary-gold); margin-bottom: 25px; text-transform: uppercase; letter-spacing: 2px; }
+        .value-item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #222; font-weight: 600; text-align: left; }
+        .value-item span:last-child { color: var(--primary-gold); }
+        
+        /* ATTRACTIVE PRICE STYLING */
+        .total-value { font-size: 1.4rem; font-weight: 700; margin-top: 25px; color: #777; }
+        .total-value strike { color: var(--accent-red); opacity: 0.8; }
+        
+        .price-now { 
+            font-size: 4rem; 
+            font-weight: 900;
+            display: block; 
+            margin: 10px 0;
+            background: linear-gradient(180deg, #FFFFFF 0%, var(--primary-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+            letter-spacing: -1px;
+        }
+        
+        .urgency-badge { color: var(--accent-red); font-weight: 800; font-size: 1.1rem; display: block; margin-top: 10px; }
+
+        /* TRUST DATA BAR */
+        .trust-data { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 20px; background: #111; padding: 30px; border-radius: 20px; margin-top: 50px; 
+        }
+        .data-point b { display: block; font-size: 1.8rem; color: var(--primary-gold); }
+        .data-point span { font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700; }
+
+        /* BENEFITS */
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; margin: 50px 0; }
+        .benefit-card { background: var(--card-bg); padding: 40px 30px; border-radius: 20px; border: 1px solid #222; transition: 0.3s; text-align: left; }
+        .benefit-card:hover { border-color: var(--primary-gold); transform: translateY(-10px); background: #161616; }
+        .benefit-card i { font-size: 2.5rem; display: block; margin-bottom: 20px; font-style: normal; }
+        .benefit-card h4 { font-size: 1.3rem; margin-bottom: 15px; color: var(--primary-gold); }
+
+        /* PRODUCT SHOWCASE */
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+        .product-img-wrapper { border-radius: 20px; overflow: hidden; position: relative; border: 1px solid #333; background: #000; }
+
+        /* PROOF */
+        .proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 40px 0; }
+        @media (min-width: 768px) { .proof-grid { grid-template-columns: repeat(4, 1fr); } }
+        .proof-card { border-radius: 15px; overflow: hidden; border: 2px solid #222; aspect-ratio: 9/16; background: #111; }
+        .proof-card img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(20%); transition: 0.3s; }
+        .proof-card:hover img { filter: grayscale(0%); }
+
+        /* FAQ */
+        .faq-box { max-width: 800px; margin: 50px auto; text-align: left; }
+        .faq-item { background: #111; margin-bottom: 15px; border-radius: 12px; border: 1px solid #222; }
+        .faq-btn { width: 100%; padding: 25px; background: none; border: none; color: white; text-align: left; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-content { padding: 0 25px; max-height: 0; overflow: hidden; transition: 0.3s ease-out; color: var(--text-dim); }
+        .faq-item.active .faq-content { padding-bottom: 25px; max-height: 200px; }
+
+        /* FOOTER */
+        footer { padding: 80px 0 40px; background: #000; text-align: center; border-top: 1px solid #111; }
+        .footer-legal { font-size: 0.75rem; color: #555; max-width: 800px; margin: 30px auto; line-height: 1.8; }
+        .footer-links a { color: var(--text-dim); text-decoration: none; margin: 0 10px; font-weight: 600; font-size: 0.85rem; display: inline-block; margin-bottom: 10px; }
+
+        .glow-text { text-shadow: 0 0 15px var(--glow); }
+
+        @media (max-width: 768px) {
+            .hero { padding-top: 120px; }
+            .btn { font-size: 1.1rem; padding: 18px 20px; }
+            .micro-copy { gap: 10px; }
+            .value-stack { padding: 25px 15px; }
+            .price-now { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        ⚠️ LIMITED OFFER: PRICE INCREASING IN <span id="timer">10:00</span>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <h2 class="reveal active">30 Day Instagram Growth System</h2>
+            <h1 class="reveal active">Grow Your Instagram Fast with Viral AI Health Reels + Proven System 🚀</h1>
+            <p class="hero-sub reveal active">
+                Used by creators to generate Millions of Views & Grow Pages Fast. 
+                Stop wasting hours on editing—use the system that actually works.
+            </p>
+            
+            <div class="video-wrapper reveal active">
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="100%"
+                        src="https://www.youtube.com/embed/ABIOUgwRDRk?autoplay=1&mute=1&loop=1&playlist=ABIOUgwRDRk&controls=1&modestbranding=1"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen style="position: absolute; top: 0; left: 0;">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="cta-box reveal active">
+                <h3 class="glow-text" style="font-size: 1.8rem; margin-bottom: 10px;">Total Value ₹5000+ — Today Only ₹199</h3>
+                <a href="https://superprofile.bio/vp/Reelsbundle199rs" class="btn">Get Instant Access ₹199</a>
+                <div class="micro-copy">
+                    <span>✅ Instant Access</span>
+                    <span>✅ No Skills Required</span>
+                    <span>✅ Beginner Friendly</span>
+                </div>
+            </div>
+
+            <div class="trust-data reveal active">
+                <div class="data-point"><b>1200+</b><span>Downloads</span></div>
+                <div class="data-point"><b>50K+</b><span>Reels Created</span></div>
+                <div class="data-point"><b>10K+</b><span>Avg. Page Growth</span></div>
+                <div class="data-point"><b>4.9/5</b><span>User Rating</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-padding reveal">
+        <div class="container">
+            <div class="value-stack">
+                <h3>Your Premium Bundle Stack:</h3>
+                <div class="value-item"><span>500+ Viral AI health Reels</span> <span>₹999 Value</span></div>
+                <div class="value-item"><span>1500 AI Talking Videos</span> <span>₹2999 Value</span></div>
+                <div class="value-item"><span>30 Day Growth Mastery eBook</span> <span>₹1999 Value</span></div>
+                <div class="value-item"><span>Bonus: Viral Templates</span> <span>PRICELESS</span></div>
+                
+                <div class="total-value">Total Value: <strike>₹5997+</strike></div>
+                <div class="price-now">Today: ₹199</div>
+                <div class="urgency-badge">⚠️ Price increasing to ₹499 soon</div>
+                
+                <div class="cta-box">
+                    <a href="https://superprofile.bio/vp/Reelsbundle199rs" class="btn" style="padding: 18px 30px;">Get Instant Access ₹199</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding reveal" style="background: #080808;">
+        <div class="container text-center">
+            <h2 class="glow-text">What This Will Do For You</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i>📈</i>
+                    <h4>Grow Followers Fast</h4>
+                    <p>Stop struggling with the algorithm. Use proven viral content to attract thousands of followers every week.</p>
+                </div>
+                <div class="benefit-card">
+                    <i>⚡</i>
+                    <h4>Save 100+ Hours</h4>
+                    <p>Forget spending all day editing. Our ready-to-use bundle allows you to post in 60 seconds.</p>
+                </div>
+                <div class="benefit-card">
+                    <i>💰</i>
+                    <h4>Start Earning</h4>
+                    <p>Build a high-traffic page and monetize through sponsorships, affiliate marketing, or brand deals.</p>
+                </div>
+                <div class="benefit-card">
+                    <i>🎭</i>
+                    <h4>Faceless Page Mastery</h4>
+                    <p>You don't need to show your face. These AI videos are designed to perform for faceless niche pages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding reveal">
+        <div class="container text-center">
+            <h2 class="glow-text">Sneak Peek of the Bundle</h2>
+            <p style="margin-bottom:20px; color:#D4AF37;">Watch sample reels before you buy 👇</p>
+
+            <div class="image-grid">
+                <div class="product-img-wrapper">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/lprcoWK2oms" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="product-img-wrapper">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/gJ0mZp_7D7k" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="product-img-wrapper">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/JmdO2w0msjY" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <a href="https://superprofile.bio/vp/get-500--viral-ai-health-reels---instagram-growth-ebook-limited-offer-₹199" class="btn">Get Instant Access ₹199</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding reveal" style="background: #080808;">
+        <div class="container text-center">
+            <h2 class="glow-text">Real Page Growth Proof</h2>
+            <div class="proof-grid">
+                <div class="proof-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJHwWGOvdJThBYUHsVqTOKrnZCgaTHG0HyHO_0SLYmnqYURo3IZnQ1mKHzRiWlGnahHZ92UD37JaWK85FwGw4EIg8pdIi5seqrrOCRtlOqf6d8MshMRZsntlPcnrVVdvnDOrvL_h8NyvOZytRUPt1lig6pWt-r_VhSNR2htkXRd7AEHmdQm4VlNV9CjDA8/s661/Screenshot%202026-03-29%20104512.png" alt="Growth Result 1"></div>
+                <div class="proof-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiluYzv-vtMzlbBQ8V0Uk3HN85Xa92K1J3M1nMoeUGAp3ZzqF1RTo8S1LhWSrsxzsz0nvO6TRaFXx552i0a0ANZ2Pl9A0qncwxU-uxw7iAvrauwMSOUaAJNcBo2K2Tx2YFN5475nkJBUA0iCPmnw4cOxCA2JFDMNDLuPqf3jYqKnhVPFO4WajcE39tXAlZp/s671/Screenshot%202026-03-29%20104535.png" alt="Growth Result 2"></div>
+                <div class="proof-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP_-38vOgO6DV-jE9AAx9rOOV4UqI31KqGObeqgCXXBpEFIVb3Mx5G0vCXU1rv162XOdd2rzh-optQUKFT8klDWo1geYt34Itu9bs3xldkAHM_fHmNvJJ40ZjUnd5LB9ozRN8rWh7SX71mbD5PFGbulagOLmK6p9WzlBfA9Fo2rfC5xwvcXbCGHMsKBkX3/s655/Screenshot%202026-03-29%20104503.png" alt="Growth Result 3"></div>
+                <div class="proof-card"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP_-38vOgO6DV-jE9AAx9rOOV4UqI31KqGObeqgCXXBpEFIVb3Mx5G0vCXU1rv162XOdd2rzh-optQUKFT8klDWo1geYt34Itu9bs3xldkAHM_fHmNvJJ40ZjUnd5LB9ozRN8rWh7SX71mbD5PFGbulagOLmK6p9WzlBfA9Fo2rfC5xwvcXbCGHMsKBkX3/s655/Screenshot%202026-03-29%20104503.png" alt="Growth Result 4"></div>
+            </div>
+            <p style="color: var(--text-dim); margin-top: 20px;">*Results vary based on niche and consistency.</p>
+        </div>
+    </section>
+
+    <section class="section-padding reveal">
+        <div class="container text-center">
+            <h2 class="glow-text">Frequently Asked Questions</h2>
+            <div class="faq-box">
+                <div class="faq-item">
+                    <button class="faq-btn">Is this really beginner friendly? <span>+</span></button>
+                    <div class="faq-content"><p>Yes! We provide the exact content. All you have to do is upload them to your Instagram account. We even show you how to do it.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn">How do I get the files? <span>+</span></button>
+                    <div class="faq-content"><p>After the payment of ₹199, you will get instant access to the download dashboard. You will also receive an email with all links.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-btn">Will my account get banned? <span>+</span></button>
+                    <div class="faq-content"><p>Absolutely not. These are original AI-generated and high-quality background clips that follow all Instagram Community Guidelines.</p></div>
+                </div>
+            </div>
+            <div class="cta-box">
+                <a href="https://superprofile.bio/vp/Reelsbundle199rs" class="btn">Get Instant Access ₹199</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html" target="_blank">Privacy Policy</a>
+                <a href="terms.html" target="_blank">Terms of Service</a>
+                <a href="refund.html" target="_blank">Refund Policy</a>
+                <a href="contact.html" target="_blank">Contact Support</a>
+            </div>
+
+            <p style="margin: 20px 0; font-weight: 700;">Copyright © 2026 - The trushort</p>
+
+            <div class="footer-legal">
+                this site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc. As stipulated by law, we can not and do not make any guarantees about your ability to get results or earn any money with my ideas, information, tools, or strategies.
+                <br><br>
+                We do not guarantee results. Your results depend on your individual effort, consistency, and market conditions.
+            </div>
+            <p style="color: #444; font-size: 0.7rem; margin-top: 10px;">Operated under Brand Name: The trushort</p>
+        </div>
+    </footer>
+
+    <script>
+        // COUNTDOWN TIMER
+        let time = 600; 
+        const timerEl = document.getElementById('timer');
+        setInterval(() => {
+            let mins = Math.floor(time / 60);
+            let secs = time % 60;
+            timerEl.innerHTML = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+            if(time > 0) time--;
+        }, 1000);
+
+        // REVEAL ON SCROLL
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                item.classList.toggle('active');
+                btn.querySelector('span').innerHTML = item.classList.contains('active') ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
